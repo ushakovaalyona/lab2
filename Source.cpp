@@ -1,8 +1,14 @@
-#include <iostream>
+#include<iostream>
+#include <Windows.h>
+#include <cstdlib>
 using namespace std;
+
 int main()
 {
-	setlocale(LC_ALL, "Russian");
+	setlocale(0, "");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
 	int  n;
 	cout << "¬ведите число от 1 до 9999 " << endl;
 	cin >> n;
